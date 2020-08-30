@@ -1,0 +1,17 @@
+Comandos Basicos Git
+
+git config --global user.name "solarijose"
+git config --global user.email "solarijose@gmail.com"
+
+Comprobar configuracion
+
+git config --list
+
+git config user.name
+
+Añadir Datos:
+
+git add -A
+git push
+git commit -m "Primer commit"
+
