@@ -1,7 +1,7 @@
 /*
  ============================================================================
- Name        : Ejercicio.c
- Author      : Solari Jose Luis
+ Name        : TP1.c
+ Author      : Solari José Luis
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -12,6 +12,6 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("Ejercicio 1"); /* prints Ejercicio 1 */
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }
