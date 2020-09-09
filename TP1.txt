@@ -1,0 +1,43 @@
+	float numUno;
+	float numDos;
+	float resultadoSuma;
+	float resultadoResta;
+	float resultadoDivision;
+	float resultadoMultiplicacion;
+
+
+__fpurge(stdin);   /*BORRA EL CONTENIDO DEL BUFFER DE STDIN*/
+=============================
+	//Declarando variables
+	 int a,b;//operando
+	 int r=0;//resultado
+	 int x;//opcion
+	 
+	 //Entrada
+	 printf("Ingresar 1 SI ES SUMA\nIngresar 2 SI ES RESTA\nIngresar 3 SI ES MULTIPLICACION\nIngresar 4 SI ES DIVISION\n"); scanf("%i",&x);
+	 //Proceso
+	 if (x==1){
+	 printf("Ingresar N1 \n"); scanf("%i",&a);
+	 printf("Ingresar N2 \n"); scanf("%i",&b);
+	 r=a+b;
+	}
+	 else if (x==2){
+	 printf("Ingresar N1 \n"); scanf("%i",&a);
+	 printf("Ingresar N2 \n"); scanf("%i",&b);
+	 r=a-b;
+	 }
+	 else if(x==3){
+	 printf("Ingresar N1 \n"); scanf("%i",&a);
+	 printf("Ingresar N2 \n"); scanf("%i",&b);
+	 r=a*b;
+	 }
+	 else if(x==4){
+	 printf("Ingresar N1 \n"); scanf("%i",&a);
+	 printf("Ingresar N2 \n"); scanf("%i",&b);
+	 r=a/b;
+	 }
+	 //Salida
+	 printf("La respuesta es: %i.\n",r);
+	 system("pause");
+
+	 return 0;
