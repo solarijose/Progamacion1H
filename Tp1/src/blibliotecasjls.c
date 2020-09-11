@@ -2,58 +2,58 @@
  * tp1.c
  *
  *  Created on: 9 sep. 2020
- *      Author: wolf
+ *      Author: Solari José Luis
  */
 
-//esta clase lleva el cuerpo de las funciones.
+//Esta clase lleva el cuerpo de las funciones.
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int funcionSumar(int numero1, int numero2, int *pResultado)
+int funcionSumar(int operadorA, int operadorB, int *pResultado)
 {
 	int retorno= -1;
 	if(pResultado!=NULL)
 	{
-		*pResultado=(numero1+numero2);
+		*pResultado=(operadorA+operadorB);
 		retorno=0;
 	}
 	return retorno;
 }
 
-int funcionResta(int numero1, int numero2, int *pResultado)
+int funcionResta(int operadorA, int operadorB, int *pResultado)
 {
 	int retorno= -1;
 	if(pResultado!=NULL)
 	{
-		*pResultado=(numero1-numero2);
+		*pResultado=(operadorA-operadorB);
 		retorno=0;
 	}
 	return retorno;
 }
 
-int funcionMultiplicacion(int numero1, int numero2, int *pResultado)
+int funcionMultiplicacion(int operadorA, int operadorB, int *pResultado)
 {
 	int retorno= -1;
 	if(pResultado!=NULL)
 	{
-		*pResultado=(numero1*numero2);
+		*pResultado=(operadorA*operadorB);
 		retorno=0;
 	}
 	return retorno;
 }
 
-int funcionDivision(int numero1, int numero2, float *pResultado)
+int funcionDivision(int operadorA, int operadorB, float *pResultado)
 {
 	int retorno= -1;
-	if(pResultado!=NULL && numero2!=NULL)
+	if(pResultado!=NULL && operadorB!=NULL)
 	{
-		*pResultado=(numero1/numero2);
+		*pResultado=(operadorA/operadorB);
 		retorno=0;
 	}
 	else
 	{
-		printf("\nNo se puede dividir por 0");
+		printf("\nNo es posible dividir por cero");
 	}
 
 	return retorno;
@@ -105,7 +105,7 @@ int funcionDivision(int numero1, int numero2, float *pResultado)
 			}
 			else
 			{
-				//printf("Error le quedan %d reintentos" ,reintentos);
+				printf("Error le quedan %d reintentos" ,reintentos);
 				printf("Error reingrese numero");
 				reintentos--;
 			}
