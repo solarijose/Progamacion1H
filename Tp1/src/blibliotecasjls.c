@@ -116,7 +116,3 @@ int funcionDivision(int operadorA, int operadorB, float *pResultado)
 		}
 		return retorno;
 	}
-
-
-
-
